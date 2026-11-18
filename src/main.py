@@ -1,16 +1,17 @@
-# This is a sample Python script.
+import pandas
+import pandas as pd
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+tempeture = [1,2,4,6,7,]
 
+pands_temp = pd.Series(tempeture , index=[7,6,4,2,1])
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print(pands_temp[1])
 
+data ={
+    "cities":["kadawatha","mathara","kaduwela"],
+    "temperature":[7,6,4],
+    "rain":[1,2,3]
+}
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+df = pd.DataFrame(data)
+print(df)
