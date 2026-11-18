@@ -7,7 +7,9 @@ authors = [
     { name = "dilaenx", email = "dilansampathnw3@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pandas>=3.1.1",
+]
 
 [project.scripts]
 pandas-pythne-project = "pandas_pythne_project:main"
